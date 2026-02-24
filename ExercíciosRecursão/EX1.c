@@ -7,7 +7,7 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 
-// Encontre o maior elemento em um vetor de n´umeros de tamanho n.
+
 
 #include <stdio.h>
 
