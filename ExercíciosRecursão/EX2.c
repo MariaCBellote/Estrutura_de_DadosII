@@ -20,7 +20,7 @@ double MaiorElementoVetor(double vetor[], int n){
     
     if(vetor[n-1]>maior){ //terminando de empilhar ela compara, sempre começando com o último da pilha (vetor,1)
        return vetor[n-1]; 
-    }                     // porém como o última já retorna v[0], ele compara v[0] como v[1], já que (v,2)
+    }                     // porém como o última já retorna v[0], ele compara v[0] como v[1], já que (v,2). E assim sucetivamente
     else{
         return maior;
     }
