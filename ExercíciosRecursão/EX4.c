@@ -17,17 +17,28 @@ int NumeroPrimo(int numero, int divisor){
     return NumeroPrimo(numero, divisor + 1);
 }
 
-int primo (int numero){
-    return NumeroPrimo(numero,2);
+//O raiz de n ?
+int NumeroPrimoOtimizado(int numero, int divisor){
+    if(divisor*divisor > numero){
+          printf("Primo");
+        return 1;
+    }
+
+    if(numero % divisor == 0){
+          printf("Não Primo");
+        return 0;
+    }
+    
+  return NumeroPrimoOtimizado(numero, divisor + 1);
 }
 
-//O raiz de n ?
-
-
+int primo (int numero){
+    return NumeroPrimoOtimizado(numero,2);
+}
 int main()
 {
     
- primo(10);
+ primo(11);
 
     return 0;
 }
