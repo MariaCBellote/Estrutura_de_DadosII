@@ -13,7 +13,7 @@ long offset;  // possição no arquivos
  
 typedef struct No{
     int n;                  // quantidade de chaves no nó
-    int chaves[M];          // chaves
+    chave chaves[M];          // chaves
     long posicaoR[M];       // posição do registro no arquivo
 
     struct No *filhos[F];   // ponteiros para filhos
