@@ -14,7 +14,7 @@ long offset;  // possição no arquivos
 typedef struct No{
     int n;                  // quantidade de chaves no nó
     chave chaves[M];          // chaves
-    long posicaoR[M];       // posição do registro no arquivo
+    //long posicaoR[M];       // posição do registro no arquivo
 
     struct No *filhos[F];   // ponteiros para filhos
 
@@ -42,7 +42,7 @@ ArvB inserirArv(ArvB B, int chave, int posicao); //?
 // busca nos
 // busca chaves partindo de nos 
 //
-void buscar(ArvB B, int chave);//Chave *buscar();
+int buscarNaArvore(ArvB B, int matricula);//Chave *buscar();
 
 // destruir arv
 void destroiArvore(ArvB B);
